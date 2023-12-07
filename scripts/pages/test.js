@@ -12,12 +12,3 @@ const testapi = (success) => {
         success(data);
     });
 }
-
-window.onload = function() {
-    //On testapi_btn click, call testapi function
-    document.getElementById('testapi_btn').addEventListener('click', () => {
-        testapi((result) => {
-            document.getElementById('testapi_result').innerText = result;
-        });
-    });
-}
