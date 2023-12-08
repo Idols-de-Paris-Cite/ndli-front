@@ -36,8 +36,15 @@
       draggable="false" />
   </div>
 
-  <button id="showSlidersButton">Changer le theme avec RGB</button>
-  <button id="showThemesButton">Themes préfaits</button>
+  <div class="button-container">
+    <button id="showSlidersButton">Changer le thème avec RGB</button>
+    <button id="themeButton">Thèmes</button>
+    <div id="themeContainer">
+      <div class="theme-circle" style="background-color: #e74c3c;"></div>
+      <div class="theme-circle" style="background-color: #f39c12;"></div>
+      <div class="theme-circle" style="background-color: #2ecc71;"></div>
+    </div>
+  </div>
   <div class="bottomLeft">
     <div id="slidersContainer" class="slider-container hidden">
       <div id="degradeContainer">
@@ -86,6 +93,7 @@
   <script src="imageSlider.js"></script>
   <script src="themeSlider.js"></script>
   <script src="sliderAnimation.js"></script>
+  <script src="themePrefaits.js"></script>
 </body>
 
 </html>
