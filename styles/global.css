@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 .hidden {
     display: none !important;
 }
@@ -31,4 +35,92 @@
 
 body {
     background-color: grey;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#inventory {
+    background-color: aquamarine;
+    position: absolute;
+    bottom:0;
+    width: inherit;
+    justify-content: space-evenly;
+    display:flex;
+
+    height: 0px;
+    -webkit-transition: height 0.5s linear;
+       -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+         -o-transition: height 0.5s linear;
+            transition: height 0.5s linear;
+}
+
+#inventory.active {
+    height: 150px;
+    -webkit-transition: height 0.5s linear;
+       -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+         -o-transition: height 0.5s linear;
+            transition: height 0.5s linear;
+}
+
+img.charlie {
+    width: 150px;
+    height: 150px;
+    filter: brightness(0%);
+}
+
+#btn_inv {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    transition: all 0.5s ease-out;
+}
+
+#btn_inv.active {
+    transform: scale(1.5);
+    transition: all 0.5s ease-out;
+}
+
+#btn_inv.active:hover {
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+}
+
+#btn_inv:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease-out;
+}
+
+#btn_inv img {
+    width: inherit;
+    height: inherit;
+}
+
+#chapeau_trouve {
+    position: absolute;
+    left: 160px;
+    top: 0;
+}
+
+#tete_trouve {
+    position: absolute;
+    left: 185px;
+    top: 52px;
+}
+
+#corps_trouve {
+    position: absolute;
+    left: 65px;
+    top: 300px;
+}
+
+#jambes_trouve {
+    position: absolute;
+    left: 15px;
+    top: 718px;
 }
