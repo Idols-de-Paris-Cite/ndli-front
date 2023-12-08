@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             console.log("UNCHEEEEEECK");
             circle.classList.add('active');
-            toggleThemeContainer();
+            // toggleThemeContainer();
             uncheckGradientCheckbox();
             changeTheme(circle.style.backgroundColor);
             updateColor();
