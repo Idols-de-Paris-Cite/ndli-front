@@ -6,6 +6,8 @@ body {
   font-family: "Raleway";
   background-color: black;
   color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #image-track {
@@ -221,7 +223,7 @@ button.disabled {
   flex-direction: row;
 }
 
-#themeContainer {
+#themeContainer, #natureContainer {
   display: none;
   flex-direction: row;
   transition: transform 0.5s ease-in-out;
@@ -252,6 +254,25 @@ button.disabled {
 
 .theme-circle.animate {
   animation: fadeIn 0.5s ease-in-out;
+}
+
+#natureContainer.animate {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#natureContainer.visible {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(0%);
+}
+
+#natureContainerWrapper {
+  position: relative;
+}
+
+#natureContainer {
+  position: absolute;
+  width: 45%;
 }
 
 @keyframes fadeIn {
