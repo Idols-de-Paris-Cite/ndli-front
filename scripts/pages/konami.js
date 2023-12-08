@@ -8,7 +8,7 @@ var allowedKeys = {
   };
   
   var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
-  
+
   var konamiCodePosition = 0;
   
   document.addEventListener('keydown', function(e) {
