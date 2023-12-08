@@ -34,6 +34,7 @@ var allowedKeys = {
     div_video.classList.add("active");
     video.play();
     document.addEventListener("click", function() {
+      video.pause();
       div_video.classList.remove("active");
     });
    //var video = document.getElementById("video");
